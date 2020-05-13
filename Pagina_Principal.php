@@ -4,10 +4,7 @@ require_once "Funciones/Conexion.php";
 
 comprobar_sesion();
 
-if (!isset($_SESSION['usuario'])) {
 
-    header ("Location : Login.php?redirigido=true");
-}
 
 ?>
 
