@@ -1,7 +1,7 @@
 <?php 
 
     require_once "Funciones/Conexion.php";
-    comprobar_sesion();
+    
 
 ?>
 
