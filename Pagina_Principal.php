@@ -21,7 +21,7 @@ if (!isset($_SESSION['usuario'])) {
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/jquery-3.4.1.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Pagina Principal</title>
 </head>
 <body>
 
