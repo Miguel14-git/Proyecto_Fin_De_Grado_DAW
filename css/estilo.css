@@ -1,0 +1,28 @@
+body{
+  background: url(../img/fondo-vivo-css.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*color: white;*/
+}
+
+.card {    
+    padding: 15px;
+    max-width: 400px;
+    height: auto;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#loginP, #cuentaP,#loginA,#cuentaA {
+    text-decoration: none;
+}
+
+.inicio{
+    border: 2px dashed;
+    border-color: blueviolet;
+    background-color: lightblue;
+    float: left;
+}
+
