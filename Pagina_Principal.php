@@ -52,10 +52,10 @@ comprobar_sesion();
                                 <a class="nav-link text-white" href="Notas.php">Poner Notas</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link text-white" href="#">Poner Faltas</a>
+                                <a class="nav-link text-white" href="Faltas.php">Poner Faltas</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link text-white" href="#">Poner Retrasos</a>
+                                <a class="nav-link text-white" href="Retrasos.php">Poner Retrasos</a>
                             </li>
                             <li class="nav-item active">
                                 <a class="nav-link text-white" href="#">Ver Gráfica</a>
