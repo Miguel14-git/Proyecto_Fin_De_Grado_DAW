@@ -49,7 +49,7 @@ comprobar_sesion();
                                 <a class="nav-link text-white" href="Matricula.php">Matricular Alumnos</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link text-white" href="#">Poner Notas</a>
+                                <a class="nav-link text-white" href="Notas.php">Poner Notas</a>
                             </li>
                             <li class="nav-item active">
                                 <a class="nav-link text-white" href="#">Poner Faltas</a>
