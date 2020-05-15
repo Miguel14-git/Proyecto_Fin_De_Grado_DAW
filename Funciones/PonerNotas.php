@@ -32,13 +32,13 @@
                
 
                 
-                $insert = "Insert into notas (Id_Alumno,Id_Asignatura,Numero,Año) values ('$id_alumno','$id_asignatura','$nota','$año')";
+                $insert = "Insert into notas (Id_Alumno,Id_Asignatura,Numero,Año_Academico) values ('$id_alumno','$id_asignatura','$nota','$año')";
                 $resultado = $bd->query($insert);
 
                 if($resultado === false){
-                    echo '<p class="text-center display-4 mt-5">Nota no realizado</p>';
+                    echo '<p class="text-center display-4 mt-5">Nota no insertada</p>';
                 }else{
-                    echo '<p class="text-center display-4 mt-5">Nota realizada</p>';
+                    echo '<p class="text-center display-4 mt-5">Nota insertada</p>';
                 }
 
 
