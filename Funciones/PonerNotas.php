@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilo.css">
         <script src="../js/jquery-3.4.1.min.js"></script>
+        
     </head>
 
     <body>
@@ -40,9 +41,9 @@
                 }else{
                     echo '<p class="text-center display-4 mt-5">Nota insertada</p>';
                 }
-
-
             ?>
+
+        
 
             <a class='btn btn-success' href='../Notas.php' role='button'>Ir a poner notas</a>
         </div>
