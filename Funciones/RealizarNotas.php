@@ -45,12 +45,23 @@
                 echo '<tr class = "text-center">';
                 echo '<td><select name="id_alumno" class="form-control">';
                 foreach ($resul as $a){
-                    echo "<option>" .$a['Id_Alumno']."</option>";
+                    echo "<option>" .$id = $a['Id_Alumno'] . " ";
+                    $select = "SELECT Nombre FROM alumnos WHERE Id_Alumno = $id";
+                    $res = $bd->query($select);
+
+                    foreach($res as $nom){
+                            echo $nom['Nombre'];
+                    }
+                    echo "</option>";
                 }
                 echo '</select>';
                 echo '</td>';
                 echo '<td><select name="asignatura" class="form-control">';
-                echo "<option>" .$id_asignatura."</option>";
+                echo "<option>" .$id_asignatura . " ";
+                $asignatura = "SELECT Nombre_Asignatura FROM asignaturas WHERE Id_Asignatura = $id_asignatura";
+                $test = $bd->query($asignatura);
+        
+                echo "</option>";
                 echo '</select>';
                 echo '</td>';
                 echo '<td><select name="año" class="form-control">';
