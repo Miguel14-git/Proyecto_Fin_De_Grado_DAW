@@ -7,6 +7,10 @@ body{
   /*color: white;*/
 }
 
+div .notas{
+
+    background: url(../img/grid.png);
+}
 .card {    
     padding: 15px;
     max-width: 400px;
