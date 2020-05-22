@@ -58,7 +58,7 @@ comprobar_sesion();
                                 <a class="nav-link text-white" href="Retrasos.php">Poner Retrasos</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link text-white" href="#">Ver Gráfica</a>
+                                <a class="nav-link text-white" href="Grafica.php">Ver Gráfica</a>
                             </li>
                             <!--
                             <li class="nav-item active">
