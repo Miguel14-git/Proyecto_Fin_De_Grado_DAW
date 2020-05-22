@@ -1,0 +1,9 @@
+#notas{
+    background-image: url(../img/grid.png);
+}
+
+.insertar{
+    background-color: lightblue;
+    border: 2px dashed;
+    border-color: blueviolet;
+}    
