@@ -16,7 +16,8 @@ comprobar_sesion();
     <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo.css">
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="shortcut icon" href="img/logoAula.png" type="image/png">
+    <script src="js/jquery-3.5.1.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pagina Principal</title>
 </head>
@@ -41,9 +42,6 @@ comprobar_sesion();
                             </li>
                         <li class="nav-item active">
                                 <a class="nav-link text-white" href="ListadoAlumnos.php">Listado Alumnos</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link text-white" href="Almacenar_alumnos.php">Almacenar Alumnos</a>
                             </li>
                             <li class="nav-item active">
                                 <a class="nav-link text-white" href="Matricula.php">Matricular Alumnos</a>
