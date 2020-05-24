@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Busqueda Alumnos</title>
+        <title>Página de Matricula de Alumnos</title>
+        <link rel="shortcut icon" href="../img/logoAula.png" type="image/png">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilo.css">
-        <script src="../js/jquery-3.4.1.min.js"></script>
+        <script src="../js/jquery-3.5.1.min.js"></script>
     </head>
 
     <body>
@@ -23,14 +24,14 @@
     
                 $bd = new PDO($cadena_conexion,$usuario,$clave);
 
-                $pagina = file_get_contents("../Fichero.txt");
+                $pagina = file_get_contents("../alumnos.json");
                 $alumno_busqueda = $_POST['nombre'];
                 $pos = strpos($pagina,$alumno_busqueda);
 
                 $select = "select Id_Alumno,Nombre from Alumnos Where Nombre Like '%$alumno_busqueda%'";
                 $alu = $bd -> query($select);
 
-                $consulta_impartir = "Select Año_Academico,Id_Asignatura from Impartir where Id_Profesor = $_SESSION[id_usuario]";
+                $consulta_impartir = "Select Año_Academico from Impartir where Id_Profesor = $_SESSION[id_usuario]";
                 $resultado = $bd->query($consulta_impartir);
 
                 $consulta_impartir2 = "Select Id_Asignatura from Impartir where Id_Profesor = $_SESSION[id_usuario]";
@@ -55,7 +56,7 @@
                     echo '<td><select name="id" class="form-control">';
                     foreach($alu as $sql) {
                         
-                            echo '<option>'.$sql['Id_Alumno'].'</option>';             
+                            echo '<option>'.$sql['Id_Alumno'].' '. $sql['Nombre'].'</option>';             
                         }
                         echo '</select>';
                         echo '</td>';
@@ -69,7 +70,12 @@
                     
                         echo '<td><select name="asignatura" class="form-control">';
                         foreach($resultado2 as $s) {
-                            echo '<option>'.$s['Id_Asignatura'].'</option>';
+                            $consulta = "Select Nombre_Asignatura from asignaturas where Id_Asignatura = $s[Id_Asignatura]";
+                            $test = $bd -> query($consulta);
+                            foreach ($test as $n){
+                                $nombre =$n['Nombre_Asignatura'];
+                            }
+                            echo '<option>'.$s['Id_Asignatura']. ' ' . $nombre . '</option>';
                         }                
                         echo '</select>';
                         echo '</td>';
@@ -79,7 +85,7 @@
                     print "</tr>";
                     print "</table>";
                     print "</div>";
-                    print '<input type="submit" name="enviar" value="Matricular Alumnos" class="mt-4 mb-4 ml-4 w-25 text-center btn btn-warning">';
+                    print '<input type="submit" name="enviar" value="Enviar Alumnos" class="mt-4 mb-4 ml-4 w-25 text-center btn btn-warning">';
                     echo '</form>';
                 }
                
