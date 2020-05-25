@@ -48,7 +48,13 @@
         echo '<tr class = "text-center">';
         echo '<td><select name="id_asignatura" class="form-control">';
         foreach ($resultado as $p){
-            echo "<option>" .$p['Id_Asignatura']."</option>";
+            echo "<option>" . $id = $p['Id_Asignatura']. " ";
+            $asignatura = "SELECT Nombre_Asignatura FROM asignaturas WHERE Id_Asignatura = $id";
+            $resul = $bd->query($asignatura);
+            foreach($resul as $nombre){
+                echo $nombre['Nombre_Asignatura'];
+            }
+            echo "</option>";
         }
         echo '</select>';
         echo '</td>';
