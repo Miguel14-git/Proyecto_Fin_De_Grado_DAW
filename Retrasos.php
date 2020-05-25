@@ -9,9 +9,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/logoAula.png" type="image/png">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
     <title>Retrasos</title>
 </head>
 
@@ -47,7 +48,13 @@
         echo '<tr class = "text-center">';
         echo '<td><select name="id_asignatura" class="form-control">';
         foreach ($resultado as $p){
-            echo "<option>" .$p['Id_Asignatura']."</option>";
+            echo "<option>" .$id = $p['Id_Asignatura']. " ";
+            $asignatura = "SELECT Nombre_Asignatura FROM asignaturas WHERE Id_Asignatura = $id";
+            $resul = $bd->query($asignatura);
+            foreach($resul as $nombre){
+                echo $nombre['Nombre_Asignatura'];
+            }
+            echo "</option>";
         }
         echo '</select>';
         echo '</td>';
@@ -68,6 +75,8 @@
     ?>
     </div>
 
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
 </body>
 
 </html>
