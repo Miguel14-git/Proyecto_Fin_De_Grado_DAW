@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="shortcut icon" href="img/logoAula.png" type="image/png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
     <title>Notas</title>
 </head>
 
@@ -75,6 +75,8 @@
     ?>
     </div>
 
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
 </body>
 
 </html>
