@@ -73,7 +73,8 @@
                 
             ?>
             <a class='btn btn-success' href='../Faltas.php' role='button'>Ir a poner faltas</a>
-            
+            <script src="../js/bootstrap.min.js"></script>
+            <script src="../js/popper.min.js"></script>
         </div>
     </body>
 </html>
