@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Retrasos</title>
+        <link rel="shortcut icon" href="../img/logoAula.png" type="image/png">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilo.css">
-        <script src="../js/jquery-3.4.1.min.js"></script>
+        <script src="../js/jquery-3.5.1.min.js"></script>
     </head>
 
     <body>
@@ -44,8 +45,16 @@
                 echo '<tr class = "text-center">';
                 echo '<td><select name="id_alumno" class="form-control">';
                 foreach ($resul as $a){
-                    echo "<option>" .$a['Id_Alumno']."</option>";
+                    echo "<option>" .$id = $a['Id_Alumno']. " ";
+                    $select = "SELECT Nombre FROM alumnos WHERE Id_Alumno = $id";
+                    $res = $bd->query($select);
+
+                    foreach($res as $nom){
+                            echo $nom['Nombre'];
+                    }
+                    echo "</option>";
                 }
+                echo "</option>";
                 echo '</select>';
                 echo '</td>';
                 echo '<td><select name="asignatura" class="form-control">';
@@ -67,6 +76,8 @@
             
             <a class='btn btn-success' href='../Retrasos.php' role='button'>Ir a poner retrasos</a>
 
+            <script src="../js/bootstrap.min.js"></script>
+            <script src="../js/popper.min.js"></script>
             
         </div>
     </body>
