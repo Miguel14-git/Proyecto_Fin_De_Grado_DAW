@@ -58,10 +58,18 @@ comprobar_sesion();
                             <li class="nav-item active">
                                 <a class="nav-link text-white" href="Grafica.php">Ver Gráfica</a>
                             </li>
-                            <!--
                             <li class="nav-item active">
-                                <a class="nav-link text-white" href="#">Búsqueda</a>
-                            </li>-->
+                                <div class="dropdown">
+                                    <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Busqueda
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="BusquedaAsi.php">Asignaturas Impartidas</a>
+                                        <!--<a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>-->
+                                    </div>
+                                </div>
+                            </li>
                             <li class="nav-item active">
                                 <a class="nav-link text-white" href="Logout.php">Cerrar Sesión</a>
                             </li>
