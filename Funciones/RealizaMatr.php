@@ -27,22 +27,29 @@
 
             $bd = new PDO($cadena_conexion,$usuario,$clave);
 
-            $id_alumno = $_POST['id']. " ";
-            $año = $_POST['año'] . " ";
-            $id_asignatura = $_POST['asignatura'] . " ";
+
+            echo "<ul class= 'list-group'>";
+            echo "<li class= 'list-group-item'>Id_Alumno elegido :" . $id_alumno = $_POST['id'] ;
+            echo "</li>";
+            echo "<li class= 'list-group-item'>Año Academico elegido :" .   $año = $_POST['año'] ;
+            echo "</li>";
+            echo "<li class= 'list-group-item'> Id_Asignatura elegido :" . $id_asignatura = $_POST['asignatura'] ;
+            echo "</li>";
+            echo "</ul>";
+
 
             $select = "Select Id_Asignatura from impartir where Año_Academico = '$año' and Id_Profesor = '$_SESSION[id_usuario]'";
             $test = $bd -> query($select);
 
             foreach ($test as $s){
-            
-                 $id = $s['Id_Asignatura'] . " ";
-                 $año . "<br>";
+                
+                $id = $s['Id_Asignatura'] . " ";
+                $año . "<br>";
 
                 $tmp[] = $id;
             }
 
-             implode(" ", $tmp);
+            echo "<div class='alert alert-secondary mt-3' role='alert'>Id_Asignaturas impartidas según el año academico : ". implode(" ", $tmp) . "</div>";
             
 
                     echo '<form action="InsertarMatr.php" method="POST">';
