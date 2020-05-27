@@ -28,7 +28,7 @@
 							<p class="alert alert-primary text-center">
 								La sesión se cerró correctamente, hasta la próxima
 							</p>
-							<a href = "Login.php">Ir a la página de login</a>
+							<a href = "Pagina_Bienvenida.html">Ir a la página inicial</a>
 						</div>
 					</div>
 				</div>
