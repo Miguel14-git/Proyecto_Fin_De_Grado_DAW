@@ -65,8 +65,8 @@ comprobar_sesion();
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                         <a class="dropdown-item" href="BusquedaAsi.php">Asignaturas Impartidas</a>
-                                        <!--<a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>-->
+                                        <a class="dropdown-item" href="AlumnosMatr.php">Alumnos Matriculados</a>
+                                        <!--<a class="dropdown-item" href="#">Something else here</a>-->
                                     </div>
                                 </div>
                             </li>
