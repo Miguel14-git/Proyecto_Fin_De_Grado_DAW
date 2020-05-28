@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/grafica.css">
     <link rel="shortcut icon" href="img/logoAula.png" type="image/png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
     <title>Grafica</title>
 </head>
 <body>
@@ -100,7 +100,7 @@
         }
     }
 
-        $json = json_encode($array);
+         $json = json_encode($array);
          $fh = fopen("notas.json", 'w');
 
          fwrite($fh, $json);
