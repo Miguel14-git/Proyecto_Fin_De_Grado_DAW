@@ -37,7 +37,7 @@
                 print '<table style = width:65% class="table table-striped table-hover table-bordered">';
                 echo '<thead class="thead-dark">';
                 echo '<tr align="center">';
-                echo "<th align = 'center'> Id_Alumno </th>";
+                echo "<th align = 'center'> Id_Alumno/Nombre </th>";
                 echo "<th align = 'center'> Id_Asignatura </th>";
                 echo "<th align = 'center'> Año_Academico </th>";
                 echo '</tr>';
