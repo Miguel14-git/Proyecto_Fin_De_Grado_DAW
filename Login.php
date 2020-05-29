@@ -10,12 +10,12 @@
 			
 			if(!empty($_POST))
 			{
-				$usuario = mysqli_real_escape_string($mysqli,$_POST['Email']);
+				$usuario = mysqli_real_escape_string($mysqli,$_POST['Usuario']);
 				$password = mysqli_real_escape_string($mysqli,$_POST['Contraseña']);
 				$error = '';
 				
 				
-				$sql = "SELECT Id_Profesor, Nombre, Apellido1,Email, Nom_Usu, Contraseña FROM Profesores WHERE Email = '$usuario' AND Contraseña = '$password'";
+				$sql = "SELECT Id_Profesor, Nombre, Apellido1,Email, Nom_Usu, Contraseña FROM Profesores WHERE Nom_Usu = '$usuario' AND Contraseña = '$password'";
 				$result=$mysqli->query($sql);
 				$rows = $result->num_rows;
 				
@@ -56,27 +56,15 @@
 
                         <form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
                             <div class="form-group">									
-                                <input type="email" class="form-control input-lg" name="Email" placeholder="Email" required>        
+                                <input type="text" class="form-control input-lg" name="Usuario" placeholder="Nombre Usuario" required>        
                             </div>							
                             <div class="form-group">        
                                 <input type="password" class="form-control input-lg" name="Contraseña" placeholder="Contraseña" required>       
                             </div>							    
                                 <button type="submit" class="btn btn-success btn-block">Login</button>
-                        </form>
+                        </form>  
 
-                            <hr>
-                            
-                        <p><a href="#showForm" data-toggle="collapse" aria-expanded="false" aria-controls="collapse">¿Has perdido tu contraseña?</a></p>	
-							<div class="collapse" id="showForm">
-								<div class='well'>
-									<form action="password-recovery.php" method="post">
-										<div class="form-group">										
-											<input type="email" class="form-control" name="email" placeholder="Enter the email associated with the password." required>
-										</div>
-										<button type="submit" class="btn btn-dark">Restablecer Contraseña</button>
-									</form>								
-								</div>
-							</div>
+                       
                     </div>
                 </div>
             </div>
