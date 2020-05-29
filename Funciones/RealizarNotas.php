@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="../css/estilo.css">
         <link rel="shortcut icon" href="../img/logoAula.png" type="image/png">
         <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="..js/bootstrap.min.js"></script>
+        
     </head>
 
     <body>
@@ -47,7 +47,7 @@
                 echo '<tr class = "text-center">';
                 echo '<td><select name="id_alumno" class="form-control">';
                 foreach ($resul as $a){
-                    echo "<option>" .$id = $a['Id_Alumno'] . " ";
+                    echo "<option id='alumno'>" .$id = $a['Id_Alumno'] . " ";
                     $select = "SELECT Nombre FROM alumnos WHERE Id_Alumno = $id";
                     $res = $bd->query($select);
 
@@ -70,20 +70,36 @@
                 echo "<option>" .$año."</option>";
                 echo '</select>';
                 echo '</td>';
-                echo '<td><input type="number" name="nota" class="form-control" min=0 max=10>';
+                echo '<td><input type="number" name="nota" class="form-control" min=0 max=10 required>';
                 echo '</td>';
                 echo'</tr>';
                 print "</table>";
                 echo'</div>';
-                print '<input type="submit" name="enviar" value="Enviar" class="mt-4 mb-4 ml-4 w-25 text-center btn btn-warning">';
+                print '<input id="botonEnviar" type="submit" name="enviar" value="Enviar" class="mt-4 mb-4 ml-4 w-25 text-center btn btn-warning" disabled>';
                 echo '</form>';
 
+
+               
                 
             ?>
 
                 <a class='btn btn-success' href='../Notas.php' role='button'>Ir a poner notas</a>
             
         </div>
-        <script src="..js/popper.min.js"></script>
+
+        <script>
+            var alumnos = document.getElementById("alumno");
+            var boton = document.getElementById("botonEnviar");
+
+            console.log(alumnos);
+
+            if(alumnos != null){
+                boton.removeAttribute('disabled');
+            }
+
+        </script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+       
     </body>
 </html>
