@@ -21,7 +21,7 @@
 <body>
 
     <?php 
-    require 'Pagina_Principal.php';?>
+    require 'Pagina_PrincipalP.php';?>
     <hr>
     <h1 class="text-center">Listado de Alumno</h1>
 
