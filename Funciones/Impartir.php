@@ -74,7 +74,7 @@
         <!-- Modal footer -->
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-success">  <a class='btn btn-success' href='../ListadoAlumnos.php' role='button'>Ir a listado alumnos</a></button>
+          <button type="button" class="btn btn-success">  <a class='btn btn-success' href='../Asignaturas.php' role='button'>Ir a seleccionar asignaturas</a></button>
         </div>
         
       </div>
