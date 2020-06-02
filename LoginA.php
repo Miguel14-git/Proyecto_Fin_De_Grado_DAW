@@ -25,7 +25,7 @@
                     $_SESSION['nombre_usuario'] = $row['Nom_Usu'];
                     $_SESSION['id_usuario'] = $row['Id_Profesor'];
 					
-					header("Location: Pagina_Principal.php");
+					header("Location: Pagina_PrincipalA.php");
 					} else {
 					$error = "El nombre o la clave son datos erroneos";
 				}
