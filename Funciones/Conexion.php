@@ -9,7 +9,15 @@ if(mysqli_connect_errno()){
 function comprobar_sesion(){
 	session_start();
 	if(!isset($_SESSION['usuario'])){	
-		header("Location: Login.php?redirigido=true");
+		header("Location: LoginP.php?redirigido=true");
 	}		
+}
+
+
+function comprobar_sesion_alumno(){
+    session_start();
+	if(!isset($_SESSION['usuario'])){	
+		header("Location: LoginA.php?redirigido=true");
+	}
 }
 ?>
