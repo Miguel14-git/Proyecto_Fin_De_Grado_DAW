@@ -45,7 +45,7 @@
         if ($count !=0) {
     
             print '<div class="row d-flex justify-content-center">';
-            print '<table style = width:65% class="table table-striped table-hover table-bordered bg-secondary">';
+            print '<table style = width:65% class="table table-striped table-hover table-bordered alert-secondary">';
             echo '<thead class="thead-dark">';
             echo '<tr align="center">';
             echo "<th align = 'center'> ID_Asignatura </th>";
