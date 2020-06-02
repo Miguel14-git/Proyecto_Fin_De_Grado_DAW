@@ -18,7 +18,7 @@
 <body>
 
 <?php
-    require "Pagina_Principal.php";
+    require "Pagina_PrincipalP.php";
 ?>
        <hr>
     <h1 class="text-center">Listado de Asignaturas Impartidas por el profesor <?php echo $_SESSION["usuario"]?></h1>
