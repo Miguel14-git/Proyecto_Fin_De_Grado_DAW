@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo1.css">
     <script src="js/jquery-3.5.1.min.js"></script>
-    <title>Consultar Retrasos</title>
+    <title>Consultar Faltas</title>
 
 <body>
     <?php
