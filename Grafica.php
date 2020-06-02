@@ -15,7 +15,7 @@
 <?php
 
     require_once "Funciones/Conexion.php";
-    require 'Pagina_Principal.php';?>
+    require 'Pagina_PrincipalP.php';?>
 
 <div class="container-fluid">
     
