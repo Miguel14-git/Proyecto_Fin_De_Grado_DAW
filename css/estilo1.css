@@ -1,0 +1,133 @@
+body{
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+#medio{
+    flex: 1 0 auto;
+  }
+  
+  .form-control{
+    width: 400px;
+  }
+  
+  p{
+    margin-top: 10px;
+  }
+  
+  #formulario{
+    padding-left: 40px;
+    margin-top: 100px;
+  }
+  
+  #bienvenida{
+    margin-top: 100px;
+  }
+  
+  #barra{
+    background-color: rgb(230, 230, 230);
+  }
+  
+  .Bbarra{
+    border-right-color: #404040;
+  }
+  
+  .vl {
+    border-left: 4px solid #404040;
+    height: 40px;
+  }
+  
+  .Eboton{
+    text-align: center;
+    width: 302.4px;  
+  }
+  
+  .Eboton:hover{
+    background-color: rgb(255, 236, 173);
+  }
+  #EbotonS{
+    background-color: rgb(255, 0, 0);
+  }
+  
+  #Eimagen{
+    width: 200px;
+  }
+  #Pbienvenida{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  
+  #Dbienvenida{
+    margin-top: 50px;
+    background-color: white;
+    -webkit-box-shadow: -8px 10px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 10px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: -8px 10px 10px 1px rgba(0,0,0,0.75);
+    text-align: center;
+    border-radius: 40px 40px 40px 40px;
+  }
+  
+  #bienvenida{
+    margin-bottom: 100px;
+  }
+  
+  #Pexplicacion{
+    margin-top: 60px;
+  }
+  
+  footer{
+    flex: 0 0 auto;
+    background-color: rgb(170, 170, 170);
+    color: white;
+    text-align: center;
+  }
+  
+  .RRSS{
+    width: 50px;
+  }
+  
+  #Isesion{
+    width: 35px;
+    float: left;
+    margin-top: 2px;
+    margin-left: 5px;
+    border: white 2px solid;
+    padding: 3px;
+  }
+  
+  #desplegable{
+    display: none;
+  }
+  
+  #desplegable:hover{
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+  }
+  
+  #Tprofesores{
+    width: 1415px;
+    margin-top: 3px;
+  }
+  
+  #informacion{
+    display: none;
+    margin-top: 50px;
+    width: 100px;
+    background-color: rgb(204, 204, 204);
+    text-align: left;
+  }
+  
+  #Iusuario{
+    width: 100px;
+    margin-top: 10px;
+    padding: 2px;
+  }
+  
+  hr{
+    height: 20px;
+  }
