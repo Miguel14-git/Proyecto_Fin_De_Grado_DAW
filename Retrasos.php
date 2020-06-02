@@ -18,7 +18,7 @@
 
 <body>
     <?php
-        require "Pagina_Principal.php";
+        require "Pagina_PrincipalP.php";
     ?>
     <hr>
     <div class="container-fluid">
