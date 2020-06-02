@@ -23,7 +23,7 @@
 					$row = $result->fetch_assoc();
 					$_SESSION['usuario'] = $row['Nombre'];
                     $_SESSION['nombre_usuario'] = $row['Nom_Usu'];
-                    $_SESSION['id_usuario'] = $row['Id_Profesor'];
+                    $_SESSION['id_usuario'] = $row['Id_Alumno'];
 					
 					header("Location: Pagina_PrincipalA.php");
 					} else {
