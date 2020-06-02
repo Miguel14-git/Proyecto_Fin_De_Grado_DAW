@@ -63,7 +63,7 @@
         <form action="Funciones/BusquedaMatr.php" method="POST" > 
             <div class="form-group">
 					<label class="col-label-md mt-3">¿Que alumno desea matricular?</label>
-						<input id="usuario" name="nombre" type="text" class="form-control form-control-md" placeholder="Introduce producto a buscar">
+						<input id="usuario" name="nombre" type="text" class="form-control form-control-md" placeholder="Introduce alumno a buscar">
 			</div>
                     <div>
 						<input name="login" type="submit" value="Entrar" class="btn btn-success mb-2">
