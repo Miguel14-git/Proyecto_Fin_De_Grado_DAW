@@ -19,7 +19,7 @@
 
                 //Consulta para comprobar si existe el email
 
-                $existeEmail = "SELECT * FROM Profesores WHERE Email = '$_POST[Email]'";
+                $existeEmail = "SELECT * FROM Profesores WHERE Nom_Usu = '$_POST[Usuario]'";
 
                 $resultado = $mysqli-> query($existeEmail);
 
@@ -28,8 +28,8 @@
                 if($count == 1){
                     
                     echo "<div class= 'alert alert-warning mt-4' role='alert'>
-                            <p>Este email ya está registrado en la base de datos.</p>
-                            <p><a href='../Pagina_Bienvenida.html'>Por favor, vuelva a la página de CrearCuenta.</a></p>
+                            <p>Este usuario ya está registrado en la base de datos.</p>
+                            <p><a href='../CuentaP.html'>Por favor, vuelva a la página de CrearCuenta.</a></p>
                         </div>
                     ";
                 }else{
@@ -56,7 +56,7 @@
                     }	
                     mysqli_close($mysqli);
             ?>
-            <a class='btn btn-outline-primary' href='../Pagina_Bienvenida.html' role='button'>Ir a página de inicio</a>
+            <a class='btn btn-outline-warning' href='../Pagina_Bienvenida.html' role='button'>Ir a página de inicio</a>
         </div>
     </body>
 </html>
