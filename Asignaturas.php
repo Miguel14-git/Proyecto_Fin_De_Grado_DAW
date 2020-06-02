@@ -21,7 +21,7 @@
 <body>
 
     <?php 
-    require 'Pagina_Principal.php';
+    require 'Pagina_PrincipalP.php';
       print  '<h1 class="text-center">Selecciona Asignatura a Impartir</h1>';
             $cadena_conexion = 'mysql:dbname=aulavirtual_instituto;host=localhost';
             $usuario = 'root';
