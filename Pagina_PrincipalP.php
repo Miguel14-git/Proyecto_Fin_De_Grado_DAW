@@ -71,7 +71,7 @@ comprobar_sesion();
                                 </div>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link text-white" href="Logout.php">Cerrar Sesión</a>
+                                <a class="nav-link text-white" href="#" id="cerrar">Cerrar Sesión</a>
                             </li>
                         </ul>
                     </div>
@@ -80,6 +80,15 @@ comprobar_sesion();
         </div>
 
 
+        <script>
+        $('#cerrar').click(function(){
+            var salir = confirm('¿Estás seguro de que quieres salir?');
+            
+            if(salir == true){
+                location.href ="Logout.php";
+            }
+        })
+    </script>
 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
