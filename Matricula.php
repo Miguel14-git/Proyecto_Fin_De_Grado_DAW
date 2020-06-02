@@ -22,7 +22,7 @@
 <body>
 
     <?php 
-    require 'Pagina_Principal.php';
+    require 'Pagina_PrincipalP.php';
             $cadena_conexion = 'mysql:dbname=aulavirtual_instituto;host=localhost';
             $usuario = 'root';
             $clave ='';
