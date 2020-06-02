@@ -5,7 +5,8 @@ require_once "Funciones/Conexion.php";
 
 ?>
 
-<head>
+<!DOCTYPE html>
+<html lang="es">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,7 +16,6 @@ require_once "Funciones/Conexion.php";
     <link rel="stylesheet" href="css/estilo1.css">
     <script src="js/jquery-3.5.1.min.js"></script>
     <title>Consultar Notas</title>
-</head>
 
 <body>
     <?php
@@ -44,7 +44,7 @@ require_once "Funciones/Conexion.php";
         echo "<br>";
 
         if ($count === 0) {
-            echo '<p> class="text-center display-4"> Ningún profesor te da clase
+            echo '<p class="text-center display-4"> No tienes ninguna nota o no te da clase ningun profesor
             </p>';
         } else {
     
