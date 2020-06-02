@@ -45,7 +45,7 @@
                     //$passHash = password_hash($pass, PASSWORD_DEFAULT);
                     
                     // Query to send Name, Email and Password hash to the database
-                    $query = "INSERT INTO profesores (Nombre, Apellido1, Apellido2,Email, Nom_Usu, Contraseña,Rol) VALUES ('$nombre', '$apellido1', '$apellido2', '$email','$usuario','$contrasena','P')";
+                    $query = "INSERT INTO profesores (Nombre, Apellido1, Apellido2,Email, Nom_Usu, Contraseña) VALUES ('$nombre', '$apellido1', '$apellido2', '$email','$usuario','$contrasena')";
                 
                     if (mysqli_query($mysqli, $query)) {
                         echo "<div class='alert alert-success mt-4' role='alert'><h3>Tu cuenta ha sido creada con éxito.</h3>";
