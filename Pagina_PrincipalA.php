@@ -36,39 +36,21 @@ comprobar_sesion_alumno();
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarText">
-                        <ul class="navbar-nav mr-auto">
+                        <ul class="navbar-nav mr-auto ">
                         <li class="nav-item active">
-                                <a class="nav-link text-white" href="Asignaturas.php">Seleccionar Asignaturas</a>
+                            <a class="nav-link text-white" href="CProfesores.php">Consultar Profesores</a>
                             </li>
                         <li class="nav-item active">
-                                <a class="nav-link text-white" href="ListadoAlumnos.php">Listado Alumnos</a>
+                                <a class="nav-link text-white" href="CNotas.php">Ver Notas</a>
+                        </li>
+                        <li class="nav-item active">
+                                <a class="nav-link text-white" href="CFaltas.php">Ver Faltas</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link text-white" href="Matricula.php">Matricular Alumnos</a>
+                                <a class="nav-link text-white" href="CRetrasos.php">Ver Retrasos</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link text-white" href="Notas.php">Poner Notas</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link text-white" href="Faltas.php">Poner Faltas</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link text-white" href="Retrasos.php">Poner Retrasos</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link text-white" href="Grafica.php">Ver Gráfica</a>
-                            </li>
-                            <li class="nav-item active">
-                                <div class="dropdown">
-                                    <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Busqueda
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="BusquedaAsi.php">Asignaturas Impartidas</a>
-                                        <a class="dropdown-item" href="AlumnosMatr.php">Alumnos Matriculados</a>
-                                        <!--<a class="dropdown-item" href="#">Something else here</a>-->
-                                    </div>
-                                </div>
+                            <a class="nav-link text-white " href="CCurso.php">Consulta Curso</a>
                             </li>
                             <li class="nav-item active">
                                 <a class="nav-link text-white" href="#" id="cerrar">Cerrar Sesión</a>
