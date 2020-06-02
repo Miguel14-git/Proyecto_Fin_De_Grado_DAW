@@ -18,7 +18,7 @@
 <body>
 
 <?php
-    require "Pagina_Principal.php";
+    require "Pagina_PrincipalP.php";
 ?>
        <hr>
     <h1 class="text-center">Selecciona para ver el listado de alumnos matriculados en los cursos del usuario  <?php echo $_SESSION["usuario"]?></h1>
